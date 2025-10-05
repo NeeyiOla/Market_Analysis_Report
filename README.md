@@ -111,6 +111,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 - Customer List
 
 | Column Name | Data type | Description |
+| --- | ---| --- |
 | Customer ID  | Text | Foreign key |
 | First Name | Text | customer first name |
 | Last Name | Text | Customer Last Name |
@@ -151,6 +152,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 - Purchasing List Table
 
 | Column Name | Data type | Description |
+| --- | ---| --- |
 | Customer ID | Text |  |
 | Date | Date | Date at which customers purchases |
 | Purchase | Decimal Number | Purchases made by each customers |
@@ -159,7 +161,20 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
-| State | Text | Primary Key |
+| State | Text | Primary Key |  
+
+
+# Data Model Structure 
+Star schema with conformed dimensions and supporting regression tables:  
+
+- FactOurchases: CustomnerID, ProductID, Date, Quantity, Unit Price, Amount
+- DimCustomer: CustomerID, Name, DOB, City, State, ZIP, Segment.
+- DimProduct: ProductID, Name, Category, ListPrice, CustomerRating, ReturnRate.
+- DimState: State, StateCode, Region.
+- DimIncome: State, AvgIncome (joins via DimState).
+- DimDate: Date, Year, Quarter, Month.
+- Regression_Tbl (state grain): x_AvgIncome, y_AvgSales6M, helpers (x2, y2, xy).
+- ProdCorr_Tbl (product grain): rating, returnRate for quality correlation.
 
 
 
