@@ -176,6 +176,6 @@ Star schema with conformed dimensions and supporting regression tables:
 - Regression_Tbl (state grain): x_AvgIncome, y_AvgSales6M, helpers (x2, y2, xy).
 - ProdCorr_Tbl (product grain): rating, returnRate for quality correlation.
 
-![Data model image](asset/image/Data_model)
+![Data model image](Asset/Image_Folder/Data_Model.png)
 
 
