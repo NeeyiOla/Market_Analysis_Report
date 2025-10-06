@@ -1,6 +1,6 @@
 # Market Analysis Report for National Clothing Chain
 
-!-- Attached the Overhead Picture before Table of Content
+![Front Cover Image](Asset/Image_Folder/shopping_mall.jpg)
 
 # [Table of Content
 - [Project Title](#Project_Title)
