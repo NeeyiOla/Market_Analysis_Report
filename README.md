@@ -90,7 +90,7 @@ Decision makers and operators who convert analytics into **campaigns**, **invent
 - A forecasting panel that shows ROI sensitivity to response rate and return rate.
 - Stakeholders sign off target segments and budget split.
 
-## Data Source
+# Data Source
 
 - **US Census Bureau**: Avg income, population, industries.
 - **Business Data**: Product inventory, prices, Customer Rating, Return Rate.
@@ -101,14 +101,15 @@ Decision makers and operators who convert analytics into **campaigns**, **invent
 ## Dataset
 
 Initially 4 dataset was provided by stakeholder for the completion of this project (or can be dowloaded in the provided GitHub repository). These four data are census data, customer list, purchase list and state list spreadsheets. Finally, after integrating the various spreadsheet into power BI, result into 7 tables listed below;
-- Avg Income by State
+
+- **Avg Income by State**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
 | State | Text | Name of State and Foreign Key |
 | Average Income | Decimal Number | Average income across each state |
 
-- Customer List
+- **Customer List**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
@@ -121,7 +122,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 | Duration | Time | Duration in hours from the day each customer was born till date |
 | Age | Whole Number | Age of customer |
 
-- Income by State
+- **Income by State**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
@@ -130,7 +131,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 | Percentage | Decimal Number | each salary range percentage breakdown to the overal percentage |
 | Estimated Income | Whole Number | each state salary range estimation |
 
-- Industries
+- **Industries**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
@@ -138,7 +139,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 | Industry | Text | Various indudtries that existed in each state |
 | Population | Whole Number | Total Population that existed by industry in each state |
 
-- Product Inventory
+- **Product Inventory**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
@@ -149,7 +150,7 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 | Customer rating | Decimal Number | overall rating for each product |
 | Return Rates | Decimal Number | rate at which each product are being returned |
 
-- Purchasing List Table
+- **Purchasing List Table**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
@@ -157,14 +158,14 @@ Initially 4 dataset was provided by stakeholder for the completion of this proje
 | Date | Date | Date at which customers purchases |
 | Purchase | Decimal Number | Purchases made by each customers |
 
-- State List
+- **State List**
 
 | Column Name | Data type | Description |
 | --- | ---| --- |
 | State | Text | Primary Key |  
 
 
-# Data Model Structure 
+## Data Model Structure 
 Star schema with conformed dimensions and supporting regression tables:  
 
 - FactOurchases: CustomnerID, ProductID, Date, Quantity, Unit Price, Amount
@@ -186,12 +187,12 @@ Star schema with conformed dimensions and supporting regression tables:
 5. Build **forecast layer** with what‑if parameters for coverage, response, margin, return rate, and media cost to project **orders, revenue, returns, profit**.
 6. Validate ratings vs returns correlation to avoid promoting high‑return items.
 
-# Tool Used 
+## Tool Used 
 - **Power BI Desktop** (Power Query, DAX, Mapping, Decomposition Tree, Bookmarks)
 - **Microsoft Excel spreadsheet** for raw data review
 - **Word Docs** for stakeholder summary
 
-# Development 
+## Development 
 - Iterative sprints: Data ➜ Model ➜ Measures ➜ Visuals v UAT ➜ Sign-off
 - Consistent typography and monochrome palette with accent highlights.
 - Bookmark navigation between **introduction, income ➜ Purchase**, and **Population ➜ Purchase** pages.
@@ -202,11 +203,18 @@ Star schema with conformed dimensions and supporting regression tables:
 - **Fix**: Reverted Remove Duplicate and intead filtered out null/0 rows created by the unpivot.
 - Date parsing (text → date): Normalised ordinal suffixes then parsed to Date.
   - M pattern used:
+
+```M.Language
 // DateText is the text column after Unpivot
 CleanDateText = Table.TransformColumns(PrevStep,
   {{"DateText", each Text.Replace(Text.Replace(Text.Replace(Text.Replace(_, "st", ""), "nd", ""), "th", ""), ",", ""), type text}}),
-ParsedDate = Table.TransformColumns(CleanDateText, {{"DateText", each Date.FromText(_), type date}})
-(Original intent as written during build: Date.FromText(Text.Replace(Text.Replace(Text.Replace(Text.Replace([Date.Text], "st", " "), "nd", " "), "th", " "), ",", " "))))
+ParsedDate = Table.TransformColumns(CleanDateText, {{"DateText", each
+Date.FromText(_), type date}})
+```
+(Original intent as written during build: 
+```M.Language
+Date.FromText(Text.Replace(Text.Replace(Text.Replace(Text.Replace([Date.Text], "st", " "), "nd", " "), "th", " "), ",", " "))))
+```
 
 **State List**: No formating required.  
 **Product Inventory**:  No fromating required currently.  
