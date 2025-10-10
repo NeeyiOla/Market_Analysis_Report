@@ -197,7 +197,7 @@ Star schema with conformed dimensions and supporting regression tables:
 - Consistent typography and monochrome palette with accent highlights.
 - Bookmark navigation between **introduction, income ➜ Purchase**, and **Population ➜ Purchase** pages.
 
-## ETL Process 
+### ETL Process 
 **Purchasing List (Power Query)**:
 - **Upivot**: Converted wide date Columns to long format (attribute = DateText, value = Purchase). Initially removed duplivates, but this collapsed true multiple purchases.
 - **Fix**: Reverted Remove Duplicate and intead filtered out null/0 rows created by the unpivot.
@@ -226,12 +226,12 @@ Date.FromText(Text.Replace(Text.Replace(Text.Replace(Text.Replace([Date.Text], "
 - **Issue**: State_list and Customer_list would not relate via state due to hidden whitespace
 - **Fix**: Applied Text.Trim to Customer List State prior to relationship creation
 
-## Project Planning & Requirement 
+### Project Planning & Requirement 
 - **In‑scope**: three‑product recommendation, state‑grain regression, forecast what‑ifs, exportable customer list.
 - **Out‑of‑scope**: full ML propensity pipeline, cross‑channel attribution, causal lift modelling (can be Phase 2).
 - **Timeline**: 2–3 sprints (ETL+Model, Measures+Visuals, UAT+Docs).
 
-## Data Explorationn & Profiling 
+### Data Explorationn & Profiling 
 - **Purchasing List**: Detected an incorrect **1:1** with customer after an early Remove Duplicate. **Root cause**: Unpivot producec manay row with **null/0** purchases. **Resilution**: remove null/0 row instead of deduping; restored true cardinality.
 - Verified ranges and distributions for **Income, Purchases, Rating, Return, Rate**.
 
@@ -249,7 +249,7 @@ Date.FromText(Text.Replace(Text.Replace(Text.Replace(Text.Replace([Date.Text], "
   3. Added helper Columns: X^2 = X * X, Y^2 = Y * Y, XY = X * Y.
   4. Measures: Sumx, SumY, SumXY, SumX^2, SumY^2, n, m (slope), b(INTERCEPT), R, R^2.
  
-#### Fittwd values (state model)
+#### Fitted values (state model)
 - n = 51, 72.43, b = 72,638.21, **R^2 = 0.78** (positive, meaningful fit).
 - **Model equation**: For x = 345 (state-avg sales), y = 72.43 * 345 + 72,638.21 = 97,627
 
@@ -266,24 +266,24 @@ Predicted Income ($) = m × CustomerSales_6M + b.
 #### Quality correlation
 - Product‑level table for Rating vs Return Rate to compute r and R² (used as a quality gate in targeting).
 
-# Dashboard Design & Visualisation (3 Dashboards)
+### Dashboard Design & Visualisation (3 Dashboards)
 - **Dashboard 1**: Income distribution & geographic potential (overview, slicers, narrative card).
 - **Dashboard 2**: Avg Purchase ↔ Avg Income with trendline, per‑customer predicted income histogram, product recommendation counts, and forecast block.
 - **Dashboard 3**: Population ↔ Total Purchases with decomposition tree to explain contribution paths and to guide geo‑allocation.
 
-# Polishing & Collaboration
+### Polishing & Collaboration
 - Clear, verb‑led titles (“Where income is highest”, “Income predicts purchasing”).
 - Tooltips showing **AvgIncome, Avg 6M Sales, Customer Count**, and R**ecommended Product split**.
 - Measure descriptions and calculation notes embedded for future maintainers.
 
-# Documentation & Version Control
+### Documentation & Version Control
 Repository structure:  
-├─ /Makert_Analysi_Report/Asset
-├─ /Asset/Dataset_Folder/census-data.xlsx/customer-list.xlsx/purchase-list.xlsx/state-list.xlsx
-├─ /Asset/Doc_&_PDF/Market Analysis Report.docx/README.md
-├─ /Asset/Image_Folder/Data_model.png/shopping_mall.jpg/README.md
-├─ Asset/Pbix_Folder/Market Analysis Report 1.pbix
-└─ README.md (this file)
+├─ /Makert_Analysi_Report/Asset  
+├─ /Asset/Dataset_Folder/census-data.xlsx/customer-list.xlsx/purchase-list.xlsx/state-list.xlsx  
+├─ /Asset/Doc_&_PDF/Market Analysis Report.docx/README.md  
+├─ /Asset/Image_Folder/Data_model.png/shopping_mall.jpg/README.md  
+├─ Asset/Pbix_Folder/Market Analysis Report 1.pbix  
+└─ README.md (this file)  
 
 
 # Detailed Insights and Recommendations
