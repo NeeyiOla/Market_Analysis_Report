@@ -3,8 +3,8 @@
 ![Front Cover Image](Asset/Image_Folder/shopping_mall.jpg)
 
 # Table of Content
-- [Project Title](#Project_Title)
-- [My Role](#My_Role)
+- [Project Title](#project_title)
+- [My Role](#my_role)
 - [Project Overview](#Project_Overview)
 - [Problem Statement](#Problem_Statement)
 - [Stakeholder Engagement](#Stakeholder_Engagement)
