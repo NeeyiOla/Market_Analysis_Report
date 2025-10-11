@@ -179,7 +179,7 @@ Star schema with conformed dimensions and supporting regression tables:
 
 ![Data model image](Asset/Image_Folder/Data_Model.png)
 
-# Methoodology
+# Methodology
 1. **Ingest & conform** data (typing, State codes, currency).
 2. **Aggregate to state** to compute **AvgIncome** and Avg **6-month sales**.
 3. Fit transparent **linear regression** using DAX aggregatres (m, b, r, R²).
@@ -187,7 +187,7 @@ Star schema with conformed dimensions and supporting regression tables:
 5. Build **forecast layer** with what‑if parameters for coverage, response, margin, return rate, and media cost to project **orders, revenue, returns, profit**.
 6. Validate ratings vs returns correlation to avoid promoting high‑return items.
 
-## Tool Used 
+## Tools Used 
 - **Power BI Desktop** (Power Query, DAX, Mapping, Decomposition Tree, Bookmarks)
 - **Microsoft Excel spreadsheet** for raw data review
 - **Word Docs** for stakeholder summary
