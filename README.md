@@ -413,7 +413,12 @@ The Market Analysis Report for National Clothing Chain establishes a robust anal
 Strategically, this insight supports data-informed marketing, pricing, and inventory planning—positioning the brand for efficient expansion and sustained profitability.
 
 
+#### **Link to Waggle Power Bi Report**  
 
+Using the link below will enable you to gain access to interact with the report and semantic model behind the success of the End Product of this project.
+
+
+[![View Report](https://img.shields.io/badge/View%20Power%20BI%20Report-Click%20Here-blue)](https://app.powerbi.com/view?r=eyJrIjoiMWNhNWRhODYtYjA4NC00MGJmLTgwYmQtNTU2N2NhZmJhZGFmIiwidCI6IjJhMzA1NzYxLWY5N2QtNDdlNC04ZjBmLWE2YzIwYzNmZWI3MyIsImMiOjh9&pageName=ReportSection28ae0a6715bb9d8ac70a)
   
 
 
