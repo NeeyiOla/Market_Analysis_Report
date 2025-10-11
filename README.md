@@ -23,7 +23,7 @@
     - [Project Planning & Requirement](#project-planning-&-requirement)
     - [Data Exploration & Profiling](#data-exploration-&-profiling)
     - [ETL with Power Query & Data Modelling](#etl-with-power-query-&-data-modelling)
-    - [Measures & Calculations](#Measures_&_Calculations)
+    - [Measures & Calculations](#measures-&-calculations)
     - [Dashboard Design & Visualisation (3 Dashboards)](#dashboard-design-&-Visualisation-(3-Dashboards))
     - [Polishing_&_Collaboration](#polishing-&-collaboration)
     - [Documentation & Version Control](#documentation-&-version-control)
