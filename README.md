@@ -47,9 +47,9 @@ Market Analysis & Targeted Product Recommendations for a National Clothing Chain
 # Project Overview 
 This project converts raw purchase and census data into an **actionable target map** We:
 1. Model **Income to Purchasing** at state grain to produce a transparent linear model.
-2. Predict **Customer-level income using recent purchases, segment customers into **income bins**, and map bins to **recommended products**
+2. Predict **Customer-level** income using recent purchases, segment customers into **income bins**, and map bins to **recommended products**
 3. Validate promotion risk using **Customer Rating to Return Rate** correlation.
-4. Provide **scenario planning (what-if targets, response, margin, return rates) for **forecasting revenue**, **ROI and profit**
+4. Provide **scenario planning** (what-if targets, response, margin, return rates) for **forecasting revenue**, **ROI and profit**
 
 # Problem Statement
 Sales have stagnated and lapsed customers are difficult to re-engage without **precise targeting**. The business needs to know needs to know which product each customer is most likely to buy and where to focus media so that spend converts onto incremental profit.
