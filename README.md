@@ -29,9 +29,10 @@
     - [Documentation & Version Control](#documentation-&-version-control)
     - [Review & Iteration](#review-&-iteration)
 - [Detailed Insights & Recommendation](#detailed-insights-&-recommendation)
-  - [Dashboard 1 - Income Distribution& Geography](#dashboard-1-income-distribution-&-geography)
-  - [Dashboard 2 - Avg_Purchase_to_Avg_Income_(Regression)](#dashboard-2-Avg-Purchase-to-Avg-Income-(Regression))
-  - [Dashboard 3 - Population to Total Purchases (Regression)](#dashboard-3-population-to-total-purchases-(Regression))
+  - [Dashboard 1 - Income Distribution& Geography](#dasboard-1:-introduction-page)
+  - [Dashboard 2 - Avg_Purchase_to_Avg_Income_(Regression)](#dasboard-2:-average-purchase-(X)-to-average-income-(Y)-correlation-and-regression-analysis)
+  - [Dashboard 3 - Population to Total Purchases (Regression)](#dasboard-3:-population-(X)-vs-total-purchase-(Y)-correlation-and-regression-analysis)
+- [Strategic Takeaways for Stakeholder](#strategic-takeaways-for-stakeholder)
 - [Stakeholders_Summary](#stakeholder-sumamery)
 - [Data Governance, Assumption & Risks](#data-governance,-assumptions-&-risks)
 
