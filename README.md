@@ -30,8 +30,8 @@
     - [Review & Iteration](#review-&-iteration)
 - [Detailed Insights & Recommendation](#detailed-insights-&-recommendation)
   - [dashboard 1 introduction page](#dashboard-1-introduction-page)
-  - [dasboard 2: average purchase (X) to average income (Y) correlation and regression analysis](#dasboard-2:-average-purchase-(X)-to-average-income-(Y)-correlation-and-regression-analysis)
-  - [dasboard 3: population (X) vs total purchase (Y) correlation and regression analysis](#dasboard-3:-population-(X)-vs-total-purchase-(Y)-correlation-and-regression-analysis)
+  - [dasboard 2 average purchase (X) to average income (Y) correlation and regression analysis](#dasboard-2-average-purchase-(X)-to-average-income-(Y)-correlation-and-regression-analysis)
+  - [dasboard 3 population (X) vs total purchase (Y) correlation and regression analysis](#dasboard-3-population-(X)-vs-total-purchase-(Y)-correlation-and-regression-analysis)
 - [Strategic Takeaways for Stakeholder](#strategic-takeaways-for-stakeholder)
 - [Stakeholders_Summary](#stakeholder-sumamery)
 - [Data Governance, Assumption & Risks](#data-governance,-assumptions-&-risks)
@@ -289,7 +289,7 @@ Repository structure:
 
 # Detailed Insights and Recommendations
 
-## DASHBOARD 1:  Introduction Page
+## DASHBOARD 1  Introduction Page
 ![Dashboard 1](Asset/Image_Folder/Front_Page.png)
 
 **Overview**  
@@ -314,7 +314,7 @@ This dashboard visualizes how **average income is distributed across U.S. states
 This initial view establishes that state income levels vary predictably, providing a logical base for correlating income with spending patterns in later regression analyses.
 
 
-## DASHBOARD 2: Average Purchase (X) to Average Income (Y) Correlation and Regression Analysis
+## DASHBOARD 2 Average Purchase (X) to Average Income (Y) Correlation and Regression Analysis
 
 ![Dashboard 2](Asset/Image_Folder/Average_Purchase_&_Average_Income.png)
 
@@ -347,7 +347,7 @@ The regression equation can thus be used to **predict income tiers** and **recom
 The regression model effectively segments the market by spending capacity. With an R² of 0.78, it provides a reliable predictor of customer purchasing behaviour, crucial for **targeted marketing** and **dynamic pricing strategies**.
 
 
-## DASHBOARD 3: Population (X) vs Total Purchase (Y) Correlation and Regression Analysis
+## DASHBOARD 3 Population (X) vs Total Purchase (Y) Correlation and Regression Analysis
 
 ![Dashboard 3](Asset/Image_Folder/Population_&_Purchase.png)
 **Overview**  
