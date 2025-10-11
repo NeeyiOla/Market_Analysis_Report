@@ -29,7 +29,7 @@
     - [Documentation & Version Control](#documentation-&-version-control)
     - [Review & Iteration](#review-&-iteration)
 - [Detailed Insights & Recommendation](#detailed-insights-&-recommendation)
-  - [dasboard 1: introduction page](#dasboard-1:-introduction-page)
+  - [dashboard 1 introduction page](#dashboard-1-introduction-page)
   - [dasboard 2: average purchase (X) to average income (Y) correlation and regression analysis](#dasboard-2:-average-purchase-(X)-to-average-income-(Y)-correlation-and-regression-analysis)
   - [dasboard 3: population (X) vs total purchase (Y) correlation and regression analysis](#dasboard-3:-population-(X)-vs-total-purchase-(Y)-correlation-and-regression-analysis)
 - [Strategic Takeaways for Stakeholder](#strategic-takeaways-for-stakeholder)
