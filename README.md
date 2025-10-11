@@ -32,8 +32,8 @@
   - [Dashboard 1 - Income Distribution& Geography](#dashboard-1-income-distribution-&-geography)
   - [Dashboard 2 - Avg_Purchase_to_Avg_Income_(Regression)](#dashboard-2-Avg-Purchase-to-Avg-Income-(Regression))
   - [Dashboard 3 - Population to Total Purchases (Regression)](#dashboard-3-population-to-total-purchases-(Regression))
-- [Stakeholder_Summary](#stakeholder-sumamery)
-- [Data Governance, Assumption & Risks](#data-governance,-assumptions-&-risk)
+- [Stakeholders_Summary](#stakeholder-sumamery)
+- [Data Governance, Assumption & Risks](#data-governance,-assumptions-&-risks)
 
 # Project Title
 Market Analysis & Targeted Product Recommendations for a National Clothing Chain
@@ -421,7 +421,7 @@ Using the link below will enable you to gain access to interact with the report 
 [![View Report](https://img.shields.io/badge/View%20Power%20BI%20Report-Click%20Here-blue)](https://app.powerbi.com/view?r=eyJrIjoiMWNhNWRhODYtYjA4NC00MGJmLTgwYmQtNTU2N2NhZmJhZGFmIiwidCI6IjJhMzA1NzYxLWY5N2QtNDdlNC04ZjBmLWE2YzIwYzNmZWI3MyIsImMiOjh9&pageName=ReportSection28ae0a6715bb9d8ac70a)
 
 
-# CEO Executive Summary 
+# Stakeholders Summary
 - A transparent regression model links **income** and **purchasing**, enabling a **customer-level product recommendation** and a **state-level spend map**
 - Expect the campaign to be **Shirt‑led** with **Sweater** as the secondary driver and **Leather Bag** for top‑income niches.
 - The **forecast panel** provides immediate ROI visibility and supports budget re‑allocation by state during optimisation.
