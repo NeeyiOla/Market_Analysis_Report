@@ -289,6 +289,7 @@ Repository structure:
 # Detailed Insights and Recommendations
 
 ## DASHBOARD 1:  Introduction Page
+![Dashboard 1](Asset/Image_Folder/Front_Page.png)
 
 **Overview**  
 This dashboard visualizes how **average income is distributed across U.S. states**, grouped into **8 income bins** ranging from $70K to $115K. It provides an overview of the demographic foundation before applying regression analysis to understand **income–purchase relationships** in later dashboards.  
@@ -313,6 +314,8 @@ This initial view establishes that state income levels vary predictably, providi
 
 
 ## DASHBOARD 2: Average Purchase (X) to Average Income (Y) Correlation and Regression Analysis
+
+![Dashboard 2](Asset/Image_Folder/Average_Purchase_&_Average_Income.png)
 
 **Overview**  
 This dashboard analyzes the relationship between average customer purchases and average income, leveraging linear regression to predict income and recommend products aligned with affordability and spending power.
@@ -345,6 +348,7 @@ The regression model effectively segments the market by spending capacity. With 
 
 ## DASHBOARD 3: Population (X) vs Total Purchase (Y) Correlation and Regression Analysis
 
+![Dashboard 3](Asset/Image_Folder/Population_&_Purchase.png)
 **Overview**  
 This dashboard examines how state population size influences total purchases, revealing whether larger populations translate to higher overall sales volumes.
 
